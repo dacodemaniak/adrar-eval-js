@@ -1,0 +1,25 @@
+:root {
+  --form-valid-color: green;
+  --form-invalid-color: red;
+}
+
+h1,
+h2 {
+  font-family: Lato;
+}
+
+[error] {
+  display: none;
+  border: solid 1px black;
+}
+
+[error].invalid,
+[error].valid {
+  display: block;
+}
+[error].invalid {
+  border-color: var(--form-invalid-color);
+}
+[error].valid {
+  border-color: var(--form-valid-color);
+}
